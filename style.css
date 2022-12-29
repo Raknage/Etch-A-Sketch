@@ -11,6 +11,11 @@ body {
   justify-content: space-between;
   height: 100vh;
   overflow: hidden;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Courier New", Courier, monospace;
   color: #eee;
+}
+
+.container {
+  border: #eee 2px solid;
+  margin: 50px;
 }
