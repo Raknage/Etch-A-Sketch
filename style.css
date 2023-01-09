@@ -19,3 +19,8 @@ body {
   border: #eee 2px solid;
   margin: 50px;
 }
+
+.square {
+  height: 20px;
+  width: 20px;
+}
