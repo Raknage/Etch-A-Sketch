@@ -20,7 +20,14 @@ body {
   margin: 50px;
 }
 
+.grid {
+  display: flex;
+  justify-content: center;
+}
+
 .square {
   height: 20px;
   width: 20px;
+  background-color: azure;
+  margin: 1px;
 }
