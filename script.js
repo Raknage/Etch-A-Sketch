@@ -1,11 +1,15 @@
 const container = document.querySelector(".container");
 const randomColor = () => ((Math.random() * 0xffffff) << 0).toString(16);
 const newBtn = document.getElementById("newBtn");
-let squareSize = 3;
+let squareSize = 16;
 
 newBtn.addEventListener("click", () => {
   while (container.hasChildNodes()) container.removeChild(container.firstChild);
-  initGrid(5);
+  let newSize = null;
+  do {
+    newSize = prompt("New grid size? (Max 100)", 16);
+  } while (newSize > 100);
+  initGrid(newSize);
 });
 
 function initGrid(squareSize) {
