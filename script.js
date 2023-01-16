@@ -1,7 +1,12 @@
 const container = document.querySelector(".container");
 const randomColor = () => ((Math.random() * 0xffffff) << 0).toString(16);
 const newBtn = document.getElementById("newBtn");
-let squareSize = 16;
+let squareSize = 3;
+
+newBtn.addEventListener("click", () => {
+  while (container.hasChildNodes()) container.removeChild(container.firstChild);
+  initGrid(5);
+});
 
 function initGrid(squareSize) {
   for (let i = 0; i < squareSize; i++) {
