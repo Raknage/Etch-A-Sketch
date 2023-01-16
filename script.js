@@ -1,5 +1,6 @@
 const container = document.querySelector(".container");
 const randomColor = () => ((Math.random() * 0xffffff) << 0).toString(16);
+const newBtn = document.getElementById("newBtn");
 let squareSize = 16;
 
 function initGrid(squareSize) {
@@ -17,4 +18,5 @@ function initGrid(squareSize) {
     container.append(grid);
   }
 }
-initGrid(squareSize)
+
+initGrid(squareSize);
